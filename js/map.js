@@ -1,7 +1,371 @@
  /*!
- * jQuery UI Google Map 3.0-alpha
+ * jQuery FN Google Map 3.0-rc
  * http://code.google.com/p/jquery-ui-map/
- * Copyright (c) 2010 - 2011 Johan Säll Larsson
+ * Copyright (c) 2010 - 2012 Johan SÃ¤ll Larsson
  * Licensed under the MIT license: http://www.opensource.org/licenses/mit-license.php
  */
- eval(function(p,a,c,k,e,r){e=function(c){return(c<a?'':e(parseInt(c/a)))+((c=c%a)>35?String.fromCharCode(c+29):c.toString(36))};if(!''.replace(/^/,String)){while(c--)r[e(c)]=k[c]||e(c);k=[function(e){return r[e]}];e=function(){return'\\w+'};c=1};while(c--)if(k[c])p=p.replace(new RegExp('\\b'+e(c)+'\\b','g'),k[c]);return p}('(3($){$.1p("1r.1I",{t:{D:(6.7)?l 6.7.Q(0.0,0.0):m,12:(6.7)?6.7.23.24:m,X:5},25:3(){2.t.D=2.E(2.t.D);k a=2.22;2.q=a.17(\'q\');2.w=[];k b=2.w[a.17(\'q\')]={9:l 6.7.21(a[0],2.t),A:[],u:[],s:[]};6.7.B.20(b.9,\'1Z\',3(){a.1i(\'1Y\',b.9)});8 $(b.9)},K:3(a,b){k c=2.4(\'9\');o.r(2.t,{\'D\':c.1U(),\'12\':c.1Q(),\'X\':c.1O()});j(a&&b){$.1d.I.K.1f(2,1g)};c.H(2.t)},1j:3(a){2.4(\'y\',l 6.7.1G()).r(2.E(a));2.4(\'9\').1F(2.4(\'y\'))},1z:3(a,b){2.4(\'9\').1y[b].J(2.z(a))},1w:3(a,b,c){k d=2.4(\'9\');k c=c||6.7.1t;a.N=(a.N)?2.E(a.N):m;k e=l c(o.r({\'9\':d,\'y\':1q},a));k f=2.4(\'A\',[]);j(e.q){f[e.q]=e}n{f.J(e)}j(e.y){2.1j(e.1o())}2.x(b,d,e);8 $(e)},1n:3(a,b){k c=l 6.7.1a(a);2.x(b,c);8 $(c)},F:3(a){2.P(2.4(a));2.M(a,[])},P:3(a){G(b O a){j(a[b]v 6.7.1h){6.7.B.1J(a[b]);a[b].R(m)}n j(a[b]v 1k){2.P(a[b])}a[b]=m}},1m:3(a,b,c,d){k e=2.4(\'A\');G(f O e){k g=(c&&e[f][a])?(e[f][a].L(c).19(b)>-1):(e[f][a]===b);2.x(d,e[f],g)}},4:3(a,b){k c=2.w[2.q];j(!c[a]){j(a.19(\'>\')>-1){k e=a.15(/ /g,\'\').L(\'>\');G(k i=0;i<e.13;i++){j(!c[e[i]]){j(b){c[e[i]]=((i+1)<e.13)?[]:b}n{8 m}}c=c[e[i]]}8 c}n j(b&&!c[a]){2.M(a,b)}}8 c[a]},1s:3(a,b){2.4(\'11\',l 6.7.1a).H(a);2.4(\'11\').1u(2.4(\'9\'),2.z(b))},M:3(a,b){2.w[2.q][a]=b},1v:3(){$(2.4(\'9\')).Z(\'1x\');2.K()},W:3(){$.1d.I.W.V(2);2.F(\'A\');2.F(\'u\');2.F(\'s\',1A);k a=2.w[2.q];G(b O a){a[b]=m}},x:3(a){j($.1B(a)){a.1f(2,1k.I.1C.V(1g,1))}},E:3(a){j(a v 6.7.Q){8 a}n{k b=a.15(\' \',\'\').L(\',\');8 l 6.7.Q(b[0],b[1])}},z:3(a){j(!a){8 m}n j(a v o){8 a[0]}n j(a v 1D){8 a}8 $(\'#\'+a)[0]},1E:3(a,b,c){k d=2;k e=2.4(\'u > U\',l 6.7.U());k f=2.4(\'u > T\',l 6.7.T());f.H(b);e.1H(a,3(g,h){j(h===\'1l\'){j(b.1K){f.1L(g)}f.R(d.4(\'9\'))}n{f.R(m)}d.x(c,g,h)})},1M:3(a,b){2.4(\'9\').1N(2.4(\'u > 1b\',l 6.7.1b(2.z(a),b)))},1P:3(a,b){2.4(\'u > 18\',l 6.7.18()).1R(a,b)},1S:3(a,b){8 $(2.4(\'s > \'+a,[]).J(l 6.7[a](o.r({\'9\':2.4(\'9\')},b))))},1T:3(a,b){((!b)?2.4(\'s > C\',l 6.7.C()):2.4(\'s > C\',l 6.7.C(b,a))).H(o.r({\'9\':2.4(\'9\')},a))},1V:3(a,b,c){2.4(\'s > \'+a,l 6.7.1W(b,o.r({\'9\':2.4(\'9\')},c)))}});o.1X.r({S:3(a){8 2.p(\'S\',a)},1c:3(a){8 2.p(\'1c\',a)},10:3(a){8 2.p(\'10\',a)},14:3(a){8 2.p(\'14\',a)},Y:3(a){8 2.p(\'Y\',a)},1e:3(a){8 2.p(\'1e\',a)},16:3(a){8 2.p(\'16\',a)},Z:3(a){6.7.B.1i(2[0],a)},p:3(a,b){j(6.7&&2[0]v 6.7.1h){6.7.B.26(2[0],a,b)}n{2.27(a,b)}8 2}})}(o));',62,132,'||this|function|get||google|maps|return|map||||||||||if|var|new|null|else|jQuery|addEventListener|id|extend|overlays|options|services|instanceof|instances|_call|bounds|_unwrap|markers|event|FusionTablesLayer|center|_latLng|clear|for|setOptions|prototype|push|_setOption|split|set|position|in|_c|LatLng|setMap|click|DirectionsRenderer|DirectionsService|call|destroy|zoom|mouseout|triggerEvent|dblclick|iw|mapTypeId|length|mouseover|replace|dragend|attr|Geocoder|indexOf|InfoWindow|StreetViewPanorama|rightclick|Widget|drag|apply|arguments|MVCObject|trigger|addBounds|Array|OK|findMarker|addInfoWindow|getPosition|widget|false|ui|openInfoWindow|Marker|open|refresh|addMarker|resize|controls|addControl|true|isFunction|slice|Object|displayDirections|fitBounds|LatLngBounds|route|gmap|clearInstanceListeners|panel|setDirections|displayStreetView|setStreetView|getZoom|search|getMapTypeId|geocode|addShape|loadFusion|getCenter|loadKML|KmlLayer|fn|init|bounds_changed|addListenerOnce|Map|element|MapTypeId|ROADMAP|_create|addListener|bind'.split('|'),0,{}))
+( function($) {
+	
+	/**
+	 * @param name:string
+	 * @param prototype:object
+	 */
+	$.a = function(name, prototype) {
+		
+		var namespace = name.split('.')[0];
+        name = name.split('.')[1];
+		
+		$[namespace] = $[namespace] || {};
+		$[namespace][name] = function(options, element) {
+			if ( arguments.length ) {
+				this._setup(options, element);
+			}
+		};
+		
+		$[namespace][name].prototype = $.extend({
+			'namespace': namespace,
+			'pluginName': name
+        }, prototype);
+		
+		$.fn[name] = function(options) {
+			
+			var isMethodCall = typeof options === "string",
+				args = Array.prototype.slice.call(arguments, 1),
+				returnValue = this;
+			
+			if ( isMethodCall && options.substring(0, 1) === '_' ) { 
+				return returnValue; 
+			}
+
+			this.each(function() {
+				var instance = $.data(this, name);
+				if (!instance) {
+					instance = $.data(this, name, new $[namespace][name](options, this));
+				}
+				if (isMethodCall) {
+					var value = instance[options].apply(instance, args);
+					if ( options === 'get' || value != null ) {
+						returnValue = value;
+					}
+				}
+			});
+			
+			return returnValue; 
+			
+		};
+		
+	};
+	
+	$.a('ui.gmap', {
+		
+		/**
+		 * Map options
+		 * @see http://code.google.com/intl/sv-SE/apis/maps/documentation/javascript/reference.html#MapOptions
+		 */
+		options: {
+			mapTypeId: 'roadmap',
+			zoom: 5	
+		},
+		
+		/**
+		 * Get or set options
+		 * @param key:string
+		 * @param options:object
+		 * @return object
+		 */
+		option: function(key, options) {
+			if (options) {
+				this.options[key] = options;
+				this.get('map').set(key, options);
+				return;
+			}
+			return this.options[key];
+		},
+		
+		/**
+		 * Setup plugin basics, 
+		 * @param options:object
+		 * @param element:node
+		 */
+		_setup: function(options, element) {
+			this.el = element;
+			options = options || {};
+			jQuery.extend(this.options, options, { 'center': this._latLng(options.center) });
+			this._create();
+			if ( this._init ) { this._init(); }
+		},
+		
+		/**
+		 * Instanciate the Google Maps object
+		 */
+		_create: function() {
+			var self = this;
+			this.instance = { 'map': new google.maps.Map(self.el, self.options), 'markers': [], 'overlays': [], 'services': [] };
+			google.maps.event.addListenerOnce(self.instance.map, 'bounds_changed', function() { $(self.el).trigger('init', self.instance.map); });
+			self._call(self.options.callback, self.instance.map);
+		},
+		
+		/**
+		 * Adds a latitude longitude pair to the bounds.
+		 * @param position:google.maps.LatLng/string
+		 */
+		addBounds: function(position) {
+			var bounds = this.get('bounds', new google.maps.LatLngBounds());
+			bounds.extend(this._latLng(position));
+			this.get('map').fitBounds(bounds);
+		},
+		
+		/**
+		 * Helper function to check if a LatLng is within the viewport
+		 * @param marker:google.maps.Marker
+		 */
+		inViewport: function(marker) {
+			var bounds = this.get('map').getBounds();
+			return (bounds) ? bounds.contains(marker.getPosition()) : false;
+		},
+		
+		/**
+		 * Adds a custom control to the map
+		 * @param panel:jquery/node/string	
+		 * @param position:google.maps.ControlPosition	 
+		 * @see http://code.google.com/intl/sv-SE/apis/maps/documentation/javascript/reference.html#ControlPosition
+		 */
+		addControl: function(panel, position) {
+			this.get('map').controls[position].push(this._unwrap(panel));
+		},
+		
+		/**
+		 * Adds a Marker to the map
+		 * @param markerOptions:google.maps.MarkerOptions
+		 * @param callback:function(map:google.maps.Map, marker:google.maps.Marker) (optional)
+		 * @return $(google.maps.Marker)
+		 * @see http://code.google.com/intl/sv-SE/apis/maps/documentation/javascript/reference.html#MarkerOptions
+		 */
+		addMarker: function(markerOptions, callback) {
+			markerOptions.map = this.get('map');
+			markerOptions.position = this._latLng(markerOptions.position);
+			var marker = new (markerOptions.marker || google.maps.Marker)(markerOptions);
+			var markers = this.get('markers');
+			if ( marker.id ) {
+				markers[marker.id] = marker;
+			} else {
+				markers.push(marker);
+			}
+			if ( marker.bounds ) {
+				this.addBounds(marker.getPosition());
+			}
+			this._call(callback, markerOptions.map, marker);
+			return $(marker);
+		},
+		
+		/**
+		 * Clears by type
+		 * @param ctx:string	e.g. 'markers', 'overlays', 'services'
+		 */
+		clear: function(ctx) {
+			this._c(this.get(ctx));
+			this.set(ctx, []);
+		},
+		
+		_c: function(obj) {
+			for ( var property in obj ) {
+				if ( obj.hasOwnProperty(property) ) {
+					if ( obj[property] instanceof google.maps.MVCObject ) {
+						google.maps.event.clearInstanceListeners(obj[property]);
+						if ( obj[property].setMap ) {
+							obj[property].setMap(null);
+						}
+					} else if ( obj[property] instanceof Array ) {
+						this._c(obj[property]);
+					}
+					obj[property] = null;
+				}
+			}
+		},
+		
+		/**
+		 * Returns the objects with a specific property and value, e.g. 'category', 'tags'
+		 * @param ctx:string	in what context, e.g. 'markers' 
+		 * @param options:object	property:string	the property to search within, value:string, operator:string (optional) (AND/OR)
+		 * @param callback:function(marker:google.maps.Marker, isFound:boolean)
+		 */
+		find: function(ctx, options, callback) {
+			var obj = this.get(ctx);
+			options.value = $.isArray(options.value) ? options.value : [options.value];
+			for ( var property in obj ) {
+				if ( obj.hasOwnProperty(property) ) {
+					var isFound = false;
+					for ( var value in options.value ) {
+						if ( $.inArray(options.value[value], obj[property][options.property]) > -1 ) {
+							isFound = true;
+						} else {
+							if ( options.operator && options.operator === 'AND' ) {
+								isFound = false;
+								break;
+							}
+						}
+					}
+					callback(obj[property], isFound);
+				}
+			}
+		},
+		
+		/**
+		 * Returns an instance property by key. Has the ability to set an object if the property does not exist
+		 * @param key:string
+		 * @param value:object(optional)
+		 */
+		get: function(key, value) {
+			var instance = this.instance;
+			if ( !instance[key] ) {
+				if ( key.indexOf('>') > -1 ) {
+					var e = key.replace(/ /g, '').split('>');
+					for ( var i = 0; i < e.length; i++ ) {
+						if ( !instance[e[i]] ) {
+							if (value) {
+								instance[e[i]] = ( (i + 1) < e.length ) ? [] : value;
+							} else {
+								return null;
+							}
+						}
+						instance = instance[e[i]];
+					}
+					return instance;
+				} else if ( value && !instance[key] ) {
+					this.set(key, value);
+				}
+			}
+			return instance[key];
+		},
+		
+		/**
+		 * Triggers an InfoWindow to open
+		 * @param infoWindowOptions:google.maps.InfoWindowOptions
+		 * @param marker:google.maps.Marker (optional)
+		 * @param callback:function (optional)
+		 * @see http://code.google.com/intl/sv-SE/apis/maps/documentation/javascript/reference.html#InfoWindowOptions
+		 */
+		openInfoWindow: function(infoWindowOptions, marker, callback) {
+			var iw = this.get('iw', infoWindowOptions.infoWindow || new google.maps.InfoWindow);
+			iw.setOptions(infoWindowOptions);
+			iw.open(this.get('map'), this._unwrap(marker)); 
+			this._call(callback, iw);
+		},
+		
+		/**
+		 * Triggers an InfoWindow to close
+		 */
+		closeInfoWindow: function() {
+			if ( this.get('iw') != null ) {
+				this.get('iw').close();
+			}
+		},
+				
+		/**
+		 * Sets an instance property
+		 * @param key:string
+		 * @param value:object
+		 */
+		set: function(key, value) {
+			this.instance[key] = value;
+		},
+		
+		/**
+		 * Refreshes the map
+		 */
+		refresh: function() {
+			var map = this.get('map');
+			var latLng = map.getCenter();
+			$(map).triggerEvent('resize');
+			map.setCenter(latLng);
+		},
+		
+		/**
+		 * Destroys the plugin.
+		 */
+		destroy: function() {
+			this.clear('markers');
+			this.clear('services')
+			this.clear('overlays')
+			this._c(this.instance);
+			jQuery.removeData(this.el, this.name);
+		},
+		
+		/**
+		 * Helper method for calling a function
+		 * @param callback
+		 */
+		_call: function(callback) {
+			if ( callback && $.isFunction(callback) ) {
+				callback.apply(this, Array.prototype.slice.call(arguments, 1));
+			}
+		},
+		
+		/**
+		 * Helper method for google.maps.Latlng
+		 * @param latLng:string/google.maps.LatLng
+		 */
+		_latLng: function(latLng) {
+			if ( !latLng ) {
+				return new google.maps.LatLng(0.0, 0.0);
+			}
+			if ( latLng instanceof google.maps.LatLng ) {
+				return latLng;
+			} else {
+				latLng = latLng.replace(/ /g,'').split(',');
+				return new google.maps.LatLng(latLng[0], latLng[1]);
+			}
+		},
+		
+		/**
+		 * Helper method for unwrapping jQuery/DOM/string elements
+		 * @param obj:string/node/jQuery
+		 */
+		_unwrap: function(obj) {
+			return (!obj) ? null : ( (obj instanceof jQuery) ? obj[0] : ((obj instanceof Object) ? obj : $('#'+obj)[0]) )
+		}
+		
+	});
+	
+	jQuery.fn.extend( {
+		
+		triggerEvent: function(eventType) {
+			google.maps.event.trigger(this[0], eventType);
+			return this;
+		},
+		
+		addEventListener: function(eventType, eventDataOrCallback, eventCallback) {
+			if ( google.maps && this[0] instanceof google.maps.MVCObject ) {
+				google.maps.event.addListener(this[0], eventType, eventDataOrCallback);
+			} else {
+				if (eventCallback) {
+					this.bind(eventType, eventDataOrCallback, eventCallback);
+				} else {
+					this.bind(eventType, eventDataOrCallback);
+				} 
+			}
+			return this;
+		},
+		  
+		removeEventListener: function(eventType) {
+			if ( google.maps && this[0] instanceof google.maps.MVCObject ) {
+				if (eventType) {
+					google.maps.event.clearListeners(this[0], eventType);
+				} else {
+					google.maps.event.clearInstanceListeners(this[0]);
+				}
+			} else {
+				this.unbind(eventType);
+			}
+			return this;
+		}
+		
+	});
+	
+	jQuery.each(('click rightclick dblclick mouseover mouseout drag dragend').split(' '), function(i, name) {
+		jQuery.fn[name] = function(a, b) {
+			return this.addEventListener(name, a, b);
+		}
+	});
+	
+} (jQuery) );

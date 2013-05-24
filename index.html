@@ -14,31 +14,38 @@
 		<h1>Communities</h1>
 		<div class="row">
 			<div class="span8 offset2">
-				<div id="map_canvas"></div>
+
+				<div id="map_canvas">hello</div>
 			</div>
 		</div>
 	</div>
 	<script type="text/javascript" src="js/jquery-1.8.3.min.js"></script>
 	<script type="text/javascript" src="js/bootstrap.min.js"></script>
-	<script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript"></script>
+	<script src="http://maps.google.com/maps/api/js?sensor=true" type="text/javascript">
+	</script>
 	<script src="js/map.js" type="text/javascript"></script>
 	<script type="text/javascript">
 	$(document).ready(function(){
-		var yourStartLatLng = new google.maps.LatLng(28.235192,-81.500818);
-		$('#map_canvas').gmap({'center': yourStartLatLng});
-		$('#map_canvas').gmap('option', 'zoom', 11);
+		$('#map_canvas').gmap().bind('init', function(ev, map) {
+			$('#map_canvas').gmap('addMarker', {'position': '57.7973333,12.0502107', 'bounds': true}).click(function() {
+				$('#map_canvas').gmap('openInfoWindow', {'content': 'Hello World!'}, this);
+			});
+		});
 		//load data
 		$.get('http://pfvdataservices.azurewebsites.net/community',
 			function(data)
 			{
 				//for each community in data, add it...
 				$(data).each(function(){
-					$('#map_canvas').gmap('addMarker', { 'position': data.Latitude +  ',' + data.Longitude, 'bounds': false })
-					.click(function() {
-						$('#map_canvas').gmap('openInfoWindow', { 'content': '<img src="http://www.perfectfloridavillas.com/img/ashley-manor.jpg" height="150" width="200"><br><font face="Arial" size="4">Ashley Manor</font><br><p class="tabs"><a href="http://www.perfectfloridavillas.com/community/ashley-manor.aspx" target="_blank">More Details</a> - <a href="/ashley-manor/all.aspx" target="_blank">See All Villas</a><br><br>What&acute;s Nearby?:<br><ul><li><a href="https://maps.google.com/?f=l&hl=en&geocode=&q=restaurants&near=28.249182+-81.608294&ie=UTF8&ei=ZPIRSMGaMaKU2wKF74HqDw&z=12" target="_blank">Restaurants</a></li><li><a href="https://maps.google.com/?f=l&hl=en&geocode=&q=shopping&near=28.249182+-81.608294&ie=UTF8&ei=ZPIRSMGaMaKU2wKF74HqDw&z=12" target="_blank">Shopping</a></li></ul></p>' }, this);
-					});
-				});
+				// 	$('#map_canvas').gmap('addMarker', { 'position': data.Latitude +  ',' + data.Longitude, 'bounds': false });
+		// 			// .click(function() {
+		// 			// 	$('#map_canvas').gmap('openInfoWindow', { 'content': '<img src="http://www.perfectfloridavillas.com/img/ashley-manor.jpg" height="150" width="200"><br><font face="Arial" size="4">Ashley Manor</font><br><p class="tabs"><a href="http://www.perfectfloridavillas.com/community/ashley-manor.aspx" target="_blank">More Details</a> - <a href="/ashley-manor/all.aspx" target="_blank">See All Villas</a><br><br>What&acute;s Nearby?:<br><ul><li><a href="https://maps.google.com/?f=l&hl=en&geocode=&q=restaurants&near=28.249182+-81.608294&ie=UTF8&ei=ZPIRSMGaMaKU2wKF74HqDw&z=12" target="_blank">Restaurants</a></li><li><a href="https://maps.google.com/?f=l&hl=en&geocode=&q=shopping&near=28.249182+-81.608294&ie=UTF8&ei=ZPIRSMGaMaKU2wKF74HqDw&z=12" target="_blank">Shopping</a></li></ul></p>' }, this);
+		//console.log(this);
+	});
+
 			});
+
+});
 </script>
 </body>
 </html>
