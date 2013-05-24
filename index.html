@@ -33,7 +33,8 @@
 			{
 				//for each community in data, add it...
 				$(data).each(function(){
-					$('#map_canvas').gmap('addMarker', { 'position':  '28.249182,-81.608294', 'bounds': false }).click(function() {
+					$('#map_canvas').gmap('addMarker', { 'position': data.Latitude +  ',' + data.Longitude, 'bounds': false })
+					.click(function() {
 						$('#map_canvas').gmap('openInfoWindow', { 'content': '<img src="http://www.perfectfloridavillas.com/img/ashley-manor.jpg" height="150" width="200"><br><font face="Arial" size="4">Ashley Manor</font><br><p class="tabs"><a href="http://www.perfectfloridavillas.com/community/ashley-manor.aspx" target="_blank">More Details</a> - <a href="/ashley-manor/all.aspx" target="_blank">See All Villas</a><br><br>What&acute;s Nearby?:<br><ul><li><a href="https://maps.google.com/?f=l&hl=en&geocode=&q=restaurants&near=28.249182+-81.608294&ie=UTF8&ei=ZPIRSMGaMaKU2wKF74HqDw&z=12" target="_blank">Restaurants</a></li><li><a href="https://maps.google.com/?f=l&hl=en&geocode=&q=shopping&near=28.249182+-81.608294&ie=UTF8&ei=ZPIRSMGaMaKU2wKF74HqDw&z=12" target="_blank">Shopping</a></li></ul></p>' }, this);
 					});
 				});
